@@ -14,17 +14,83 @@
 
     <title>Document</title>
   </head>
+
   <body>
     <div class="header">
-        <i id="teste" class="fa-solid fa-bars"></i>
-        <div class="icon">
-            <div class="logoHeader">
-                <a href=""><img src="assets/logo-digital.webp" alt=""></a>
-            </div>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+      <div id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
+      <div class="logoHeader">
+        <a href=""><img src="assets/logo-digital.webp" alt="" /></a>
+      </div>
+
+      <div class="teste">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i id="teste" class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Finalizar Compra</h1>
+      <div class="container">
+        <h2>Informações Pessoais</h2>
+        <form action="">
+          <label for="nome">Nome Completo *</label>
+          <input type="text" name="nome" id="nome" />
+
+          <label for="email">E-mail *</label>
+          <input type="text" name="email" id="email" />
+
+          <label for="cpf">CPF *</label>
+          <input type="number" name="cpf" id="cpf" />
+
+          <label for="telefone">Celular *</label>
+          <input type="tel" name="telefone" id="telefone" />
+        </form>
+
+        <h2>Informações de Entrega</h2>
+        <form action="">
+          <label for="endereco">Endereço *</label>
+          <input type="text" name="endereco" id="endereco" />
+
+          <label for="bairro">Bairro *</label>
+          <input type="text" name="bairro" id="bairro" />
+
+          <label for="cidade">Cidade *</label>
+          <input type="text" name="cidade" id="cidade" />
+
+          <label for="cep">CEP *</label>
+          <input type="number" name="cep" id="cep" />
+
+          <label for="complemento">Complemento</label>
+          <input type="text" name="complemento" id="complemento" />
+        </form>
+
+        <h2>Informação de Pagamento</h2>
+        <form action="">
+          <label for="">Forma de Pagamento</label>
+          <div class="pag">
+            <input type="radio" name="frmPag" id="frmPagCred" />
+            <label for="frmPagCred">Cartão de Credito</label>
+
+            <input type="radio" name="frmPag" id="frmPagBol" />
+            <label for="frmPagBol">Boleto Bancário</label>
+          </div>
+
+          <label for="nomeCard">Nome do Cartão</label>
+          <input type="text" name="nomeCard" id="nomeCard" />
+
+          <label for="dataCard">Data o Número do Cartão</label>
+          <input type="number" name="dataCard" id="dataCard" />
+
+          <label for="dataVenCard">Data de Vencimento do Cartão</label>
+          <input type="number" name="dataVenCard" id="dataVenCard" />
+
+          <label for="cvv">CVV *</label>
+          <input type="number" name="cvv" id="cvv" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
